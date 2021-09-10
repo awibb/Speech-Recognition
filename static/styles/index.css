@@ -1,0 +1,35 @@
+h1, p, input {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #657587;
+}
+
+#speechContainer{
+    margin: 20px;
+}
+
+#submitButton{
+    background-color: #0191FE;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+#submitButton:hover{
+    cursor: pointer;
+}
+
+#speechContainer{
+    margin-top: 20px;
+}
+
+#speechText{
+    font-size: 20px;
+    width: 500;
+
+}
+
