@@ -12,6 +12,8 @@ This is a simple transcription appplication built using Python and Flask. Flask 
 * SpeechRecognition
 ### Executing program
 
+#### Included in the repository is a .wav that was used for testing.
+
 * How to run the program
 * Open terminal and navigate to the root directory of the project
 * Run the follwing commands
