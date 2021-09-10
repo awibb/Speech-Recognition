@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Speech Recognition</title>
+    <meta charset="UTF-8">
+    <title>Speech Recognition</title>
 
 </head>
+
 <body>
-<div id="speechContainer">
+    <div id="speechContainer">
 
-    <h1>Upload new file</h1>
-    <form method="" enctype="multipart/form-data">
-        <input type="file" name="file" />
-        <br />
-        <input type="submit" value="Transcribe"/>
+        <h1>Upload new file</h1>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <br />
+            <input type="submit" value="Transcribe" />
 
+            {% if transcript != "" %}
+            <div id="transcriptContainer">
+                <h1>Transcript:</h1>
+                <p>{{transcript}}</p>
+            </div>
+            {% endif %}
 
+        </form>
 
-    </form>
-
-</div>
+    </div>
 </body>
+
 </html>
