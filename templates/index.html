@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <title>Speech Recognition</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" />
+
 </head>
 
 <body>
@@ -14,12 +19,12 @@
         <form method="post" enctype="multipart/form-data">
             <input type="file" name="file" />
             <br />
-            <input type="submit" value="Transcribe" />
+            <input type="submit" id="submitButton" value="Transcribe" />
 
             {% if transcript != "" %}
             <div id="transcriptContainer">
                 <h1>Transcript:</h1>
-                <p>{{transcript}}</p>
+                <p id="speechText">{{transcript}}</p>
             </div>
             {% endif %}
 
